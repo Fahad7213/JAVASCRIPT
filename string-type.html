@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="item" type="text">
+    <button onclick="display()">result</button>
+    <input id="result" type="text">
+
+    <script>
+        function display(){
+            var item
+
+            item=(document.getElementById("item").value)
+            switch(item)
+            {
+            case "apple":
+                result="apple is good" 
+                break;
+            case "mango": 
+                result="mango is good"
+                break;
+            case "nuts": 
+                result="nuts are good"
+            default: 
+                result="not bad"
+   
+            }
+            document.getElementById("result").value=result
+
+        }
+    </script>
+</body>
+</html>

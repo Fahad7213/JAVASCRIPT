@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <input id="dg1" type="text">a
+    <input id="dg2" type="text">b <br> <br>
+    <button  onclick="display()" >swap</button> <br> <br>
+    <input id="a" type="text">a
+    <input id="b" type="text">b
+    <script>
+       function display(){
+        var a,b,c=0
+        a=Number(document.getElementById("dg1").value)
+        b=Number(document.getElementById("dg2").value)
+        c=a
+        a=b
+        b=c
+        document.getElementById("a").value=a
+        document.getElementById("b").value=b
+
+       } 
+    </script>
+</body>
+</html>

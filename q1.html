@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="demo" type="text">
+    <input id="demo1" type="text">
+    <button onclick="add()" >+</button>
+    <button onclick="sub()"> -</button>
+    <button onclick="multi()"> *</button>
+    <button onclick="div()"> /</button>
+
+    <input id="result" type="text">
+    <script>
+        function add()
+        {
+            var a,b
+            a=Number(document.getElementById("demo").value)
+            b=Number(document.getElementById("demo1").value)
+
+            document.getElementById("result").value=a+b 
+        }
+        function sub()
+        {
+            var a,b
+            a=Number(document.getElementById("demo").value)
+            b=Number(document.getElementById("demo1").value)
+
+            document.getElementById("result").value=a-b 
+        }
+        function multi()
+        {
+            var a,b
+            a=Number(document.getElementById("demo").value)
+            b=Number(document.getElementById("demo1").value)
+
+            document.getElementById("result").value=a*b 
+        }
+        function div()
+        {
+            var a,b
+            a=Number(document.getElementById("demo").value)
+            b=Number(document.getElementById("demo1").value)
+
+            document.getElementById("result").value=a/b 
+        }
+    </script>
+
+</body>
+</html>
